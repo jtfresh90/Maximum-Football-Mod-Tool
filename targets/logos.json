@@ -1,0 +1,21 @@
+{
+  "source": "recon/maximum-football/overnight-2026-10-24/logs/LANE_A_FINDINGS.md \u00a77 (DA_CustomizationUniformPartSymbols) + asset_listing.txt",
+  "symbols": [
+    {
+      "name": "Decals_League_Logo",
+      "path": "/TestAssets/Funlabs/Dynamic/PlayerCharacter/RegularMuscular/Decals_League_Logo"
+    },
+    {
+      "name": "Decals_tLogo01",
+      "path": "/TestAssets/Funlabs/Dynamic/PlayerCharacter/RegularMuscular/Decals_tLogo01"
+    },
+    {
+      "name": "Decals_tLogo02",
+      "path": "/TestAssets/Funlabs/Dynamic/PlayerCharacter/RegularMuscular/Decals_tLogo02"
+    }
+  ],
+  "note": "That is the entire contents of DA_CustomizationUniformPartSymbols (975 bytes, 278-byte export): 3 decals, no per-part slot table, no scale/UV/position data. The free-placement constraint lives in the asset's class/struct definition or in materials/UI \u2014 needs a .usmap to read. Related asset in the census: MF_LogoProjection (MaximumFootball/Content/MaximumFootball/ImprovedCustomization/Materials/MaterialFunctions/MF_LogoProjection) \u2014 a material function, not a slot table.",
+  "related": [
+    "MaximumFootball/Content/MaximumFootball/ImprovedCustomization/Materials/MaterialFunctions/MF_LogoProjection.uasset"
+  ]
+}

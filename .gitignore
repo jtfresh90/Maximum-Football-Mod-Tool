@@ -1,0 +1,27 @@
+# Game-derived binaries and build outputs — never commit these.
+*.utoc
+*.ucas
+*.pak
+*.uasset
+*.uexp
+*.ubulk
+*.uptnl
+*.sig
+
+# Backups and install receipts produced by the tool.
+*.bak
+build.json
+bulk_build.json
+install_receipt.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Local game installs, tool binaries, and key material.
+MaximumFootball/
+Maximum Football/
+tools/
+aes_key.txt
+*key*.txt
+.muse-github-snapshot-sync.json

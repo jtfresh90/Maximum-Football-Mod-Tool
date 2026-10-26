@@ -1,0 +1,751 @@
+{
+  "source": "recon/maximum-football/asset_listing.txt (IoStore census, 51,882 files; cross-checked against overnight-2026-10-24/logs/list.csv \u2014 same 186 distinct tables)",
+  "count": 186,
+  "note": "Earlier notes said 181 tables; the file census actually shows 186 distinct .uasset tables: 178 under GameFramework/DataTables/Rosters/ (DT_RosterTeamData_001-178) + 8 under GameFramework/DataTables/ (DT_RosterTeamData_00-07). DT_RosterTeamData_00 reads as the template table (NewRow, placeholder '2222\u2026' attribute blocks). Row/field editing needs a .usmap \u2014 names are plaintext but attribute payloads are coded strings with unknowable field boundaries.",
+  "tables": [
+    {
+      "name": "DT_RosterTeamData_00",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/DT_RosterTeamData_00.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_01",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/DT_RosterTeamData_01.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_02",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/DT_RosterTeamData_02.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_03",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/DT_RosterTeamData_03.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_04",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/DT_RosterTeamData_04.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_05",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/DT_RosterTeamData_05.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_06",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/DT_RosterTeamData_06.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_07",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/DT_RosterTeamData_07.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_001",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_001.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_002",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_002.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_003",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_003.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_004",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_004.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_005",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_005.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_006",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_006.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_007",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_007.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_008",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_008.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_009",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_009.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_010",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_010.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_011",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_011.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_012",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_012.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_013",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_013.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_014",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_014.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_015",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_015.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_016",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_016.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_017",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_017.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_018",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_018.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_019",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_019.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_020",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_020.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_021",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_021.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_022",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_022.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_023",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_023.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_024",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_024.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_025",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_025.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_026",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_026.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_027",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_027.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_028",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_028.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_029",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_029.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_030",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_030.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_031",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_031.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_032",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_032.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_033",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_033.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_034",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_034.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_035",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_035.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_036",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_036.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_037",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_037.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_038",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_038.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_039",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_039.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_040",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_040.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_041",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_041.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_042",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_042.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_043",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_043.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_044",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_044.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_045",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_045.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_046",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_046.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_047",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_047.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_048",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_048.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_049",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_049.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_050",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_050.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_051",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_051.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_052",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_052.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_053",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_053.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_054",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_054.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_055",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_055.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_056",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_056.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_057",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_057.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_058",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_058.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_059",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_059.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_060",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_060.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_061",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_061.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_062",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_062.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_063",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_063.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_064",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_064.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_065",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_065.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_066",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_066.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_067",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_067.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_068",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_068.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_069",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_069.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_070",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_070.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_071",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_071.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_072",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_072.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_073",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_073.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_074",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_074.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_075",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_075.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_076",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_076.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_077",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_077.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_078",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_078.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_079",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_079.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_080",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_080.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_081",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_081.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_082",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_082.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_083",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_083.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_084",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_084.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_085",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_085.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_086",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_086.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_087",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_087.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_088",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_088.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_089",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_089.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_090",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_090.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_091",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_091.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_092",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_092.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_093",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_093.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_094",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_094.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_095",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_095.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_096",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_096.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_097",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_097.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_098",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_098.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_099",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_099.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_100",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_100.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_101",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_101.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_102",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_102.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_103",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_103.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_104",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_104.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_105",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_105.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_106",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_106.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_107",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_107.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_108",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_108.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_109",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_109.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_110",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_110.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_111",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_111.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_112",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_112.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_113",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_113.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_114",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_114.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_115",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_115.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_116",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_116.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_117",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_117.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_118",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_118.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_119",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_119.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_120",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_120.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_121",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_121.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_122",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_122.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_123",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_123.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_124",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_124.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_125",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_125.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_126",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_126.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_127",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_127.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_128",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_128.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_129",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_129.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_130",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_130.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_131",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_131.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_132",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_132.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_133",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_133.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_134",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_134.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_135",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_135.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_136",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_136.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_137",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_137.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_138",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_138.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_139",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_139.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_140",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_140.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_141",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_141.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_142",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_142.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_143",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_143.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_144",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_144.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_145",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_145.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_146",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_146.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_147",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_147.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_148",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_148.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_149",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_149.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_150",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_150.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_151",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_151.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_152",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_152.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_153",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_153.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_154",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_154.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_155",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_155.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_156",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_156.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_157",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_157.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_158",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_158.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_159",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_159.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_160",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_160.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_161",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_161.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_162",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_162.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_163",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_163.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_164",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_164.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_165",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_165.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_166",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_166.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_167",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_167.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_168",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_168.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_169",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_169.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_170",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_170.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_171",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_171.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_172",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_172.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_173",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_173.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_174",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_174.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_175",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_175.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_176",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_176.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_177",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_177.uasset"
+    },
+    {
+      "name": "DT_RosterTeamData_178",
+      "path": "MaximumFootball/Content/MaximumFootball/GameFramework/DataTables/Rosters/DT_RosterTeamData_178.uasset"
+    }
+  ]
+}

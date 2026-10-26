@@ -1,0 +1,151 @@
+{
+  "source": "recon/maximum-football/overnight-2026-10-24/logs/LANE_A_FINDINGS.md \u00a78 (DA_Stadiums export-data strings), verified Oct 24 2026",
+  "count": 36,
+  "note": "STADIUM036-038 do not appear in the data strings. Data STADIUM numbering != T_StadiumNNN texture numbering (e.g. data 002=Campus Stadium, texture 002=Municipal) \u2014 key edits off data IDs, never texture suffixes.",
+  "stadiums": [
+    {
+      "id": "STADIUM001",
+      "name": "Maximum Games Stadium"
+    },
+    {
+      "id": "STADIUM002",
+      "name": "Campus Stadium"
+    },
+    {
+      "id": "STADIUM003",
+      "name": "WinterValley Arena"
+    },
+    {
+      "id": "STADIUM004",
+      "name": "Civic Stadium"
+    },
+    {
+      "id": "STADIUM005",
+      "name": "Bayside Park"
+    },
+    {
+      "id": "STADIUM006",
+      "name": "Gamecoders Colosseum"
+    },
+    {
+      "id": "STADIUM007",
+      "name": "Freedom Field"
+    },
+    {
+      "id": "STADIUM008",
+      "name": "Vista Park"
+    },
+    {
+      "id": "STADIUM009",
+      "name": "Veterans Field"
+    },
+    {
+      "id": "STADIUM010",
+      "name": "Municipal Stadium"
+    },
+    {
+      "id": "STADIUM011",
+      "name": "Buding Stadium"
+    },
+    {
+      "id": "STADIUM012",
+      "name": "Alumni Stadium"
+    },
+    {
+      "id": "STADIUM013",
+      "name": "Memorial Stadium"
+    },
+    {
+      "id": "STADIUM014",
+      "name": "Castonguay Stadium"
+    },
+    {
+      "id": "STADIUM015",
+      "name": "Dep Bank Dome"
+    },
+    {
+      "id": "STADIUM016",
+      "name": "Chancellors Field"
+    },
+    {
+      "id": "STADIUM017",
+      "name": "Irvine Colosseum"
+    },
+    {
+      "id": "STADIUM018",
+      "name": "Mapleview Stadium"
+    },
+    {
+      "id": "STADIUM019",
+      "name": "Chapel Field"
+    },
+    {
+      "id": "STADIUM020",
+      "name": "Graham Field"
+    },
+    {
+      "id": "STADIUM021",
+      "name": "Varsity Park"
+    },
+    {
+      "id": "STADIUM022",
+      "name": "Riverbank Field"
+    },
+    {
+      "id": "STADIUM023",
+      "name": "Parsons Field"
+    },
+    {
+      "id": "STADIUM024",
+      "name": "TruVision Stadium"
+    },
+    {
+      "id": "STADIUM025",
+      "name": "Cobblestone Park"
+    },
+    {
+      "id": "STADIUM026",
+      "name": "Seaside Park"
+    },
+    {
+      "id": "STADIUM027",
+      "name": "Old Glory Grounds"
+    },
+    {
+      "id": "STADIUM028",
+      "name": "Victory Park"
+    },
+    {
+      "id": "STADIUM029",
+      "name": "Carrier Stadium"
+    },
+    {
+      "id": "STADIUM030",
+      "name": "Military Base"
+    },
+    {
+      "id": "STADIUM031",
+      "name": "Space Dome"
+    },
+    {
+      "id": "STADIUM032",
+      "name": "Silverpine Stadium"
+    },
+    {
+      "id": "STADIUM033",
+      "name": "Hillside Stadium"
+    },
+    {
+      "id": "STADIUM034",
+      "name": "Citadel Park"
+    },
+    {
+      "id": "STADIUM035",
+      "name": "Gothic Grounds"
+    },
+    {
+      "id": "STADIUM039",
+      "name": "Training Camp Stadium"
+    }
+  ]
+}

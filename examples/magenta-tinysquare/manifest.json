@@ -1,0 +1,1 @@
+{"description":"Visible test patch: T_TinySquare (2x2 white UI texture) recoloured magenta. Built from the Oct 24 2026 overnight PoC modified legacy files. Use ONLY to test whether the game accepts an unsigned *_P container — it proves nothing about gameplay mods until that launch test passes.","name":"magenta-tinysquare-test","version":"1.0"}

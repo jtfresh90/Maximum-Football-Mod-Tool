@@ -1,0 +1,44 @@
+{
+  "targets": [
+    {
+      "id": "T1",
+      "name": "Custom teams in Exhibition",
+      "status": "BLOCKED",
+      "gate": ".usmap",
+      "why": "Exhibition panel is not stripped and mentions no custom teams at all (verified negative over 3 panel name maps). The gate lives in the HUB/team-data objects (e.g. WBP_Team_Select_Team_Data). Dumping those needs a .usmap.",
+      "unblocks": "One Windows run with Dumper-7/UE4SS (or a full-memory minidump) to produce a .usmap."
+    },
+    {
+      "id": "T2",
+      "name": "In-depth stadium editing (fields, configs, custom models, surface art)",
+      "status": "BLOCKED",
+      "gate": ".usmap",
+      "why": "Registry recovered (36 stadiums, grass/seat color axes), but data-level edits need a .usmap to deserialize safely. Field surface art is NO LONGER blocked by .ubulk: Oodle library liboo2corelinux64.so.9 installed next to retoc Oct 25 2026, and retoc to-legacy now converts .ubulk textures (T_NoiseShape verified: Extracted 2, 0 failed, previously 0/2).",
+      "unblocks": ".usmap for data edits; texture round-trip for surface art now works via the pak lane."
+    },
+    {
+      "id": "T3",
+      "name": "In-depth editing of DEFAULT teams",
+      "status": "BLOCKED",
+      "gate": ".usmap",
+      "why": "186 DT_RosterTeamData_* tables are real player data (plaintext names, ~87 players/team), but row/field names and attribute boundaries are unrecoverable without a .usmap. Raw binary row editing is not sane.",
+      "unblocks": ".usmap, then dump -> edit JSON -> repack via the pak lane."
+    },
+    {
+      "id": "T4",
+      "name": "Unlock all Season Pass equipment",
+      "status": "READY (pending in-game test)",
+      "gate": "in-game test only",
+      "why": "Exe patch built Oct 24 2026: 9 bytes, 3 sites in the BattlePass data loader (0x144e832af), forces cached tier=100 + status PremiumActive. Claimed arrays (+0x560/+0x570) NOT forced; server claim validation may still reject claims.",
+      "unblocks": "Joshua's in-game test on his play setup (back up original exe first)."
+    },
+    {
+      "id": "T5",
+      "name": "FREE LOGO PLACEMENT on equipment (any piece, any size, any position)",
+      "status": "BLOCKED",
+      "gate": ".usmap",
+      "why": "DA_CustomizationUniformPartSymbols holds only 3 decals, no slot/UV data. The constraint is in the class/struct definition or materials/UI (MF_LogoProjection) \u2014 needs a .usmap to read.",
+      "unblocks": ".usmap, then dump the UniformPartSymbols class definition."
+    }
+  ]
+}
