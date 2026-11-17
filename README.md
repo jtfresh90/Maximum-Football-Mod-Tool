@@ -10,6 +10,18 @@ and the verified registries recovered from the game files.
 Python 3, standard library only. No install step, no bundled game files,
 no game binaries, no AES key in this repo.
 
+## Windows EXE — no Python needed
+
+Download the latest release zip from
+[Releases](https://github.com/jtfresh90/Maximum-Football-Mod-Tool/releases),
+extract it, and run `mfmod.exe`. Keep `mf_patch.exe` next to it — the pak
+lane calls it. No Python install needed; the commands are the same as
+below, with `mfmod.exe` in place of `python3 mfmod.py`.
+
+Still needed for the **pak lane** (same as running from source): retoc
+v0.1.5 and MFTool / .NET (see Requirements below). The **exe lane** (T4
+Season Pass patch) works with the two exes alone.
+
 ## What it is — and what it is not
 
 - It **is** the tool for the two lanes that have actually been built and

@@ -518,9 +518,24 @@ def cmd_exe_restore(args):
 
 # ---------------------------------------------------------------- pak lane (wrapper)
 
-def cmd_pak(args):
+def pak_command(pak_args):
+    """Command that runs the bundled mf-patch.
+
+    From source: the python interpreter running mf_patch.py next to this
+    file. Frozen (PyInstaller exe): mf_patch.exe sitting next to this exe —
+    a frozen app has no python interpreter to run a .py file with.
+    """
+    if getattr(sys, "frozen", False):
+        exe = Path(sys.executable).resolve().parent / "mf_patch.exe"
+        if not exe.exists():
+            die(f"mf-patch exe not found at {exe} (expected next to mfmod.exe)")
+        return [str(exe)] + list(pak_args)
     if not MF_PATCH.exists():
         die(f"mf-patch not found at {MF_PATCH}")
+    return [sys.executable, str(MF_PATCH)] + list(pak_args)
+
+
+def cmd_pak(args):
     if not args.pak_args:
         print("mfmod pak — forwards to mf-patch. Usage:")
         print("  mfmod.py pak build <mod_dir> -o <out_dir> [--name pakchunk999-Mods_P]")
@@ -537,7 +552,7 @@ def cmd_pak(args):
         print("       pack-raw — transport verified in tooling only, in-game")
         print("       acceptance unproven; see README 'Bulk lane')")
         return 0
-    cmd = [sys.executable, str(MF_PATCH)] + args.pak_args
+    cmd = pak_command(args.pak_args)
     print(f"mfmod: delegating to mf-patch: {' '.join(args.pak_args)}", flush=True)
     r = subprocess.run(cmd)
     return r.returncode
