@@ -1,0 +1,96 @@
+# Builds the standalone Windows EXEs and publishes a GitHub Release.
+#
+# Why Actions builds it: PyInstaller only builds for the machine it runs
+# on, and there is no Windows builder in the dev environment — so the
+# Windows EXE is built on a Windows runner here.
+#
+# Triggers:
+#   - Manually: Actions tab -> "Release Windows EXE" -> Run workflow,
+#     with a version like v1.0.0.
+#   - Automatically: pushing a tag like v1.0.0.
+#
+# What it builds (both are stdlib-only Python, frozen with PyInstaller):
+#   - mfmod.exe      — the unified tool (entry point)
+#   - mf_patch.exe   — the pak/bulk lane, called by mfmod.exe when frozen
+#                      (a frozen app has no python interpreter to run a
+#                      .py file with, so the pak lane ships as its own exe
+#                      sitting next to mfmod.exe)
+# The targets/*.json registries are bundled inside mfmod.exe.
+#
+# What it does NOT bundle (still needed for the pak lane, same as source):
+#   - retoc v0.1.5 (https://github.com/trumank/retoc/releases)
+#   - MFTool / .NET (for mount verification)
+# The exe lane (T4 patch) works with the two exes alone.
+
+name: Release Windows EXE
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version / tag (e.g. v1.0.0)"
+        required: true
+        default: "v1.0.0"
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-windows-exe:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PyInstaller
+        run: pip install pyinstaller
+
+      - name: Build the exes
+        run: |
+          pyinstaller --onefile --console --name mfmod --add-data "targets;targets" mfmod.py
+          pyinstaller --onefile --console --name mf_patch mf_patch.py
+
+      - name: Smoke-test the exes (no game needed)
+        run: |
+          dist\mfmod.exe --help
+          dist\mfmod.exe list stadiums
+          dist\mfmod.exe pak
+          dist\mf_patch.exe --help
+
+      - name: Package the release zip
+        shell: pwsh
+        run: |
+          $version = "${{ inputs.version || github.ref_name }}"
+          New-Item -ItemType Directory -Force -Path release | Out-Null
+          Copy-Item dist\mfmod.exe, dist\mf_patch.exe, README.md, LICENSE -Destination release\
+          Compress-Archive -Path release\* -DestinationPath "MaximumFootballModTool-$version-windows.zip"
+
+      - name: Create the GitHub Release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $version = "${{ inputs.version || github.ref_name }}"
+          $notes = @"
+          Standalone Windows build — no Python needed. Download the zip, extract it, run mfmod.exe.
+          Keep mf_patch.exe next to mfmod.exe (the pak lane calls it).
+
+          What is in the zip:
+          - mfmod.exe — the unified tool (exe lane, pak lane, research lists, doctor/status)
+          - mf_patch.exe — the pak/bulk lane helper
+          - README.md, LICENSE
+
+          Still needed for the pak lane (same as running from source):
+          - retoc v0.1.5 — https://github.com/trumank/retoc/releases
+          - MFTool / .NET runtime — for mount verification
+          The exe lane (T4 Season Pass patch) works with the two exes alone.
+
+          Honest limits (same as the README): the exe patch is built and byte-verified only — whether the game accepts a modified exe is settled by a real in-game test. Unsigned *_P acceptance in-game is unproven. Full asset editing (T1/T2/T3/T5) is blocked on a .usmap from one Windows run of the game.
+          "@
+          gh release create $version "MaximumFootballModTool-$version-windows.zip" --title "Maximum Football Mod Tool $version" --notes $notes
